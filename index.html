@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Breeding</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="jquery-3.6.3.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    
+</head>
+<body onload="setThingsUp()">
+    <div id="everything">
+    <div id="p_head"><p id="#p_head_txt">Breeding pea</p></div>
+    <button id="selectBut0" onclick="BreedingSelector(0)" >Mono-Hybrid</button>
+    <button id="selectBut1" onclick="BreedingSelector(1)">Di-Hybrid</button>
+    <div id="p_body">
+        <div id="MonoHybrid">
+            <div id="FathersThings">
+                <p id="fallelesLabel">Father's trait:</p>
+                <select id="ftraits" name="ftype1" aria-label="input select">
+                    <option value="AA">AA</option>
+                    <option value="Aa" selected="">Aa</option>
+                    <option value="aa">aa</option>
+                </select>
+                </div>
+                <div id="MothersThings">
+                <p id="mallelesLabel">Mother's trait:</p>
+                <select id="mtraits" name="mtype1" aria-label="input select">
+                    <option value="AA">AA</option>
+                    <option value="Aa" selected="">Aa</option>
+                    <option value="aa">aa</option>
+                </select>
+                </div>
+                <br>
+                <div id="result">
+                    <p style="color:black;">Possible outcomes :</p>
+                    <table id="monoTable" style="display:none">
+                        <tr>
+                            <td id="th00" style="background:orange">♀\♂</td>
+                            <td id="th10" style="background:cornflowerblue">A</td>
+                            <td id="th20" style="background:cornflowerblue">a</td>
+                        </tr>
+                        <tr>
+                            <td id="th01" style="background:deeppink">A</td>
+                            <td id="th11">AA</td>
+                            <td id="th21">Aa</td>
+                        </tr>
+                        <tr>
+                            <td id="th01" style="background:deeppink">a</td>
+                            <td id="th12">Aa</td>
+                            <td id="th22">aa</td>
+                        </tr>
+                    </table>
+                    
+                </div>
+        </div>
+
+
+
+        <div id="DiHybrid">
+        <div id="FathersThings">
+        <p id="fallelesLabel">Father's traits:</p>
+        <select id="ftraits" id="ftraits1" name="ftype1" aria-label="input select">
+            <option value="0">AA</option>
+            <option value="1" selected="">Aa</option>
+            <option value="2">aa</option>
+        </select>
+        <select id="ftraits" id="ftraits2" name="ftype2" aria-label="input select">
+            <option value="0">BB</option>
+            <option value="1" selected="">Bb</option>
+            <option value="2">bb</option>
+        </select>
+        </div>
+        <div id="MothersThings">
+        <p id="mallelesLabel">Mother's traits:</p>
+        <select id="mtraits" id="mtraits1" name="mtype1" aria-label="input select">
+            <option value="0">AA</option>
+            <option value="1" selected="">Aa</option>
+            <option value="2">aa</option>
+        </select>
+        <select id="mtraits" id="mtraits2" name="mtype2" aria-label="input select">
+            <option value="0">BB</option>
+            <option value="1" selected="">Bb</option>
+            <option value="2">bb</option>
+        </select>
+        </div>
+        <br>
+        <div id="result">
+            <p style="color:black;">Possible outcomes :</p>
+            <table id="diTable" style="display:none;">
+                <tr>
+                    <td id="th00" style="background:orange">♀\♂</td>
+                    <td id="th10" style="background:cornflowerblue">AB</td>
+                    <td id="th20" style="background:cornflowerblue">Ab</td>
+                    <td id="th30" style="background:cornflowerblue">aB</td>
+                    <td id="th40" style="background:cornflowerblue">ab</td>
+                </tr>
+                <tr>
+                    <td id="th01" style="background:deeppink">AB</td>
+                    <td id="th11">AB<br> AB</td>
+                    <td id="th21">AB<br> Ab</td>
+                    <td id="th31">AB<br> aB</td>
+                    <td id="th41">AB<br> ab</td>
+                </tr>
+                <tr>
+                    <td id="th02" style="background:deeppink">Ab</td>
+                    <td id="th12">Ab<br> AB</td>
+                    <td id="th22">Ab<br> Ab</td>
+                    <td id="th32">Ab<br> aB</td>
+                    <td id="th42">Ab<br> ab</td>
+                </tr>
+                <tr>
+                    <td id="th03" style="background:deeppink">aB</td>
+                    <td id="th13">aB<br> AB</td>
+                    <td id="th23">aB<br> Ab</td>
+                    <td id="th33">aB<br> aB</td>
+                    <td id="th43">aB<br> ab</td>
+                </tr>
+                <tr>
+                    <td id="th04" style="background:deeppink">ab</td>
+                    <td id="th14">ab<br> AB</td>
+                    <td id="th24">ab<br> Ab</td>
+                    <td id="th34">ab<br> aB</td>
+                    <td id="th44">ab<br> ab</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+<button id="Calculate" onclick="Breed()">Breed</button>
+</body>
+</html>

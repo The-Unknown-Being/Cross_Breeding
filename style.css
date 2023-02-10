@@ -1,0 +1,127 @@
+body{
+    background-color:#303030;
+}  
+p{
+    color:white;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    font-size:20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    background-color:green;
+    border-radius: 10px;
+    margin:5px;
+    border-color: green;
+    transition: all 0.4s;
+}
+button:hover {
+    /* fallback in case we need to support older or non-supportive browsers (IE, Opera mini) */
+    background: burlywood;
+    transition: 0.4s;
+  }
+table{
+    table-layout: auto;
+    border:2px;
+    font-size:25px;
+    color:black;
+    margin:10px;
+    padding:5px;
+    border-collapse: collapse;
+    position:relative;
+    bottom:5px;
+}
+th, td {
+    padding: 20px;
+    text-align: center;
+    border:2px;
+    border-color:black;
+    border-style:groove;
+  }
+#selectBut0:hover{
+    background-color: burlywood;
+    transition: 0.4s;
+}
+#selectBut0:active{
+    background-color: burlywood;
+    transition: 0.4s;
+}
+#p_head{
+    position:relative;
+    border-radius:8px;
+    margin:5px;
+    background-color:darkslategrey;
+    color:white;
+    padding: 1px 0px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+#p_body{
+    position:relative;
+    border-radius:8px;
+    height:auto;
+    min-height:500px;
+    margin:5px;
+    background-color:lavender;
+    color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:30px;
+} 
+.traits{
+    color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:10px;
+    border-radius:5px;
+    width:150px;
+    font-size:25px;
+}
+#result{
+    position:relative;
+}
+#ErrorMessages{
+    position:relative;
+    color:red;
+    font-size:25px;
+    margin:5px;
+}
+#fallelesLabel{
+    color:black;
+    font-size:25px;
+    margin:5px;
+    padding:1px;
+}
+#mallelesLabel{
+    color:black;
+    font-size:25px;
+    margin:5px;
+    padding:1px;
+    position: relative;
+    right:5px;
+    top:5px;
+}
+#ftraits{
+    position:relative;
+    margin:5px;
+    padding:8px;
+    font-size:20px;
+}
+#mtraits{
+    position:relative;
+    margin:5px;
+    padding:8px;
+    font-size:20px;
+    top:5px;
+    right:5px;
+}
+#MothersThings{
+    position:absolute;
+    top: -10px;
+    right: 8px;
+}
+#MonoHybrid{
+    display:block;
+}
+#DiHybrid{
+    display:none;
+}
